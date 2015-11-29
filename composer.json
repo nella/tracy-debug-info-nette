@@ -1,0 +1,50 @@
+{
+	"name": "nella/tracy-debug-info-nette",
+	"description": "Tracy BlueScreen panel for Exception::__debugInfo for Nette",
+	"keywords": ["tracy", "debuginfo", "exception", "debugger", "nette"],
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Patrik Votoček",
+			"email": "patrik@votocek.cz",
+			"homepage": "http://patrik.votocek.cz",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/nella/tracy-debug-info-nette/issues",
+		"source": "https://github.com/nella/tracy-debug-info-nette"
+	},
+	"autoload": {
+		"psr-4": {
+			"Nella\\Tracy\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Nella\\Tracy\\": "tests/"
+		}
+	},
+	"require": {
+		"php": "~5.5|~7.0",
+		"nella/tracy-debug-info": "~1.0.0",
+		"nette/di": "~2.3.0"
+	},
+	"require-dev": {
+		"jakub-onderka/php-console-highlighter": "~0.3.2",
+		"jakub-onderka/php-parallel-lint": "~0.9.0",
+		"nella/coding-standard": "~3.0.0"
+	},
+	"config": {
+		"bin-dir": "bin"
+	},
+	"archive": {
+		"exclude": [
+			".gitattributes",
+			".gitignore"
+		]
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
